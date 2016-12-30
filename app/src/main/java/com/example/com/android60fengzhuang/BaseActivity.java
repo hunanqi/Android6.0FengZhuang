@@ -25,14 +25,14 @@ public class BaseActivity extends AppCompatActivity {
         /**
          * 有权限没有获取成功
          *
-         * @param list
+         * @param list 表示没有获取成功的权限
          */
         void faild(List<String> list);
 
         /**
          * 有权限用户选择了不再提醒
          *
-         * @param list
+         * @param list 表示选择了不再提醒的选线
          */
         void noRemind(List<String> list);
     }
