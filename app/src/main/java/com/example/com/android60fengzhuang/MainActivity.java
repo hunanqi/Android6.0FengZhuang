@@ -59,7 +59,7 @@ public class MainActivity extends BaseActivity {
                         dialog.dismiss();
                         MainActivity.this.finish();
                     }
-                }).setTitle("没有"+s+"权限无法开启app功能请在设置中开启权限").show();
+                }).setTitle("没有"+s+"权限无法开启app功能，请在设置中开启权限").show();
             }
         });
     }
