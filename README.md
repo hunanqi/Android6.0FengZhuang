@@ -3,12 +3,23 @@
 
 ## Usage
 此项目根据csdn博客郭霖公开课（Android6.0运行时权限）思路封装。针对Android原装系统，国产机由于定制的原因不能完全兼容，也能正常运行，关于是否拒绝权限等，只能通过其他办法了，或者不做处理。
-下载本项目，复制baseactivity相关代码到自己的基类activity中.包括onRequestPermissionsResult
-方法下所有代码，以及自己定义的方法requesPermission和一个接口MPermissionListener.
-项目思路：在基类activity中编写好方法，子类继承基类activity。
-需要在其他非activity中调用的，需要自己写一个ativity管理类，找出当前的最顶层的activity，然后当做参数传递到基类requesPermission，代替其中this就能在其他其他java文件中调用此方法了。最后把requesPermission方法改成static
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+ 
+ dependencies {
+	        compile 'com.github.hunanqi:Android6.0FengZhuang:1.0.0'
+	}
+ 使用：
+ 1.需要使用的activity继承BaseActivity
+ 2.在自己的activity中
+  requesPermission(lists, new MPermissionListener(){}),
+  第一个参数是包含要申请的权限的list<String>的集合,第二个参数是回调接口，处理请求失败，成功，被拒绝等状态。
 ``` java
-本项目使用例子
+本项目源码
  private void reques(final List<String> lists) {
         requesPermission(lists, new MPermissionListener() {
             @Override
