@@ -3,6 +3,7 @@
 
 ## Usage
 此项目根据csdn博客郭霖公开课（Android6.0运行时权限）思路封装。针对Android原装系统，国产机由于定制的原因不能完全兼容，也能正常运行，关于是否拒绝权限等，只能通过其他办法了，或者不做处理。
+``` java
 allprojects {
 		repositories {
 			...
@@ -18,6 +19,7 @@ allprojects {
  2.在自己的activity中
   requesPermission(lists, new MPermissionListener(){}),
   第一个参数是包含要申请的权限的list<String>的集合,第二个参数是回调接口，处理请求失败，成功，被拒绝等状态。
+ ```
 ``` java
 本项目源码
  private void reques(final List<String> lists) {
