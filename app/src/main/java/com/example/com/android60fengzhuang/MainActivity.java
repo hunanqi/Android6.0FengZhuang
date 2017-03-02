@@ -9,6 +9,8 @@ import android.os.Bundle;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.hnq.utsoft.libary.BaseActivity;
+
 public class MainActivity extends BaseActivity {
 
     @Override

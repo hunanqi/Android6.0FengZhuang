@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Android6.0FengZhuang.iml" filepath="$PROJECT_DIR$/Android6.0FengZhuang.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android6.0FengZhuang.iml" filepath="$PROJECT_DIR$/Android6.0FengZhuang.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libary/libary.iml" filepath="$PROJECT_DIR$/libary/libary.iml" />
     </modules>
   </component>
 </project>
