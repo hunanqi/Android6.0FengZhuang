@@ -1,4 +1,4 @@
-package com.example.com.android60fengzhuang;
+package cn.hnq.utsoft.libary;
 
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
@@ -15,8 +15,7 @@ import java.util.List;
 
 public class BaseActivity extends AppCompatActivity {
     private MPermissionListener mPermission;
-
-    interface MPermissionListener {
+    public interface MPermissionListener {
         /**
          * 有权限
          */
