@@ -1,4 +1,4 @@
-# android 6.0权限封装+例子
+# android 6.0权限封装
 
 
 ## Usage
